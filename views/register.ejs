@@ -1,0 +1,24 @@
+<% include partials/header %>
+  <div class="container">
+    <div class="row">
+      <h1 style="text-align:center;">Register</h1>
+
+      <form action="/register" method="post" style="width:30%; margin: 0 auto;">
+        <div class="form-group">
+          <label for="name">User Name:</label>
+          <input type="text" class="form-control" name="username" id="username" placeholder="Enter the username">
+        </div>
+        <div class="from-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Enter the Password">
+        </div>
+        <div class="clearfix"></div>
+        <p style="padding:10px;"></p>
+        <div class="form-group">
+          <button class="btn btn-primary btn-lg btn-block" type="submit" name="button">Login</button>
+        </div>
+        <a style="text-align:center;" href="/">Go Back</a>
+      </form>
+    </div>
+  </div>
+<% include partials/footer %>
